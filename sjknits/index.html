@@ -12,7 +12,7 @@
 	hello World!
     </div>
 
-    
+<!--    
     <script type="text/javascript">
 	var AddShoppersWidgetOptions = { 'loadCss': false };
         var js = document.createElement('script');
@@ -22,6 +22,20 @@
         js.src = ('https:' == document.location.protocol ? 'https://shop.pe/widget/' : 'http://cdn.shop.pe/widget/') + 'widget_async.js#5c48f828bbddbd4b71bfeb31';
         document.getElementsByTagName("head")[0].appendChild(js);
     </script>
+-->
+
+
+<script type="text/javascript">
+    var AddShoppersWidgetOptions = { 'loadCss': false, 'pushResponse': false };
+    (!function(){
+        var t=document.createElement("script");
+        t.type="text/javascript",
+        t.async=!0,
+        t.id="AddShoppers",
+        t.src="https://shop.pe/widget/widget_async.js#5c48f828bbddbd4b71bfeb31",
+        document.getElementsByTagName("head")[0].appendChild(t)
+    }());
+</script>
 
 
 </body>
